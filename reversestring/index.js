@@ -5,7 +5,13 @@
 //   reverse('hello') === 'olleh'
 //   reverse('Greetings!') === '!sgniteerG'
 
-function reverse(str) {
+function reverse(str){
+  const array = str.split('');
+  array.reverse();
+  return array.join('');
+}
+
+function reverse_loop(str) {
   let reversed = new Array(str.length);
   for (let i = 0; i < str.length; i++) {
     reversed[str.length - i - 1] = str[i];
