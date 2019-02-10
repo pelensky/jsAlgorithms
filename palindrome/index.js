@@ -8,6 +8,13 @@
 //   palindrome("abcdefg") === false
 
 function palindrome(str) {
+  const split = str.split('');
+  return split.every((char, index) => {
+    return char === split[split.length - index - 1];
+  });
+}
+
+function isStringAPalindrome(str) {
   return str === reverse(str);
 }
 
