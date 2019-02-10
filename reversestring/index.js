@@ -6,6 +6,12 @@
 //   reverse('Greetings!') === '!sgniteerG'
 
 function reverse(str) {
+  return str.split('').reduce((reversed, character) => {
+    return character + reversed;
+  }, '')
+}
+
+function reverse_add_to_beginning_of_string(str) {
   let reversed = '';
   for (let character of str) {
     reversed = character + reversed;
