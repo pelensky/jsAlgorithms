@@ -1,0 +1,13 @@
+{
+  "name": "js-algorithms",
+  "version": "1.0.0",
+  "description": "Practicing common algorithms in JS.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC"
+}
